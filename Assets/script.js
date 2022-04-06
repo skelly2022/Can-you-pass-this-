@@ -24,7 +24,7 @@ var questions = [
   },
 
   {
-    question: "Where is the correct place to insert a JavaScript",
+    question: "Where is the correct place to insert a JavaScript?",
     answers: ["Both the Head and Body are correct", "Head Section", "Nav Bar", "Body Section"],
     correct: "Both the head and body are correct",
   },
@@ -61,7 +61,8 @@ function timer() {
 
   if (sec <= 0) {
     clearInterval(timed);
-    alert("Time out!! :(");
+    alert("Time out!! :(")
+    hide();
   }
   return;
 }
@@ -82,7 +83,7 @@ function checkquestion(event) {
     correct1();
   } else if (
     event.target.innerHTML.includes("Both the Head and Body are correct") &&
-    questiontext.innerHTML.includes("Where is the correct place to insert a JavaScript")
+    questiontext.innerHTML.includes("Where is the correct place to insert a JavaScript?")
   ) {
     correct2();
   } else if (
@@ -108,7 +109,7 @@ function incorrect() {
 
   if (questiontext.innerHTML.includes("Inside which HTML element do we put the JavaScript?")) {
     startgame2correct();
-  } else if (questiontext.innerHTML.includes("Where is the correct place to insert a JavaScript")) {
+  } else if (questiontext.innerHTML.includes("Where is the correct place to insert a JavaScript?")) {
     startgame3correct();
   } else if (questiontext.innerHTML.includes("How do you find the number with the highest value of x and y?")) {
     startgame4correct();
