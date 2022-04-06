@@ -61,8 +61,7 @@ function timer() {
 
   if (sec <= 0) {
     clearInterval(timed);
-    alert("Time out!! :(")
-    hide();
+    alert("Time out!! :(");
   }
   return;
 }
