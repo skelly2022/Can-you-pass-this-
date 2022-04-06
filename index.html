@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Javascript Coding Quiz</title>
+    <link rel="stylesheet" type="text/css" href="Assets/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <p class="highscores">View Highscores</p>
+      <p id="time">Time:</p>
+    </header>
+
+    <main>
+      <div id="introId" class="intro">
+        <h1>Coding Quiz Challange</h1>
+
+        <p>
+          Try to answer the following code-related questions within the time
+          limit. Keep in mind that incorrect answers will penalize your
+          scoretime by 10 seconds!
+        </p>
+
+        <button id="sb">Begin</button>
+      </div>
+      <div id="questions" class="hide">
+        <h2 id="qtext"></h2>
+        <ul>
+          <li><button id="ans1"></button></li>
+          <li><button id="ans2"></button></li>
+          <li><button id="ans3"></button></li>
+          <li><button id="ans4"></button></li>
+        </ul>
+      </div>
+
+      <div id="fscore" class="hide">
+        <h1>All Done!</h1>
+        <p id="finalscore"></p>
+        <form action="">
+          <label for="fname">Initials:</label>
+          <input type="text" id="fname" value="John">
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </main>
+
+    <script type="text/javascript" src="Assets/script.js"></script>
+  </body>
+</html>
